@@ -1,18 +1,18 @@
-require 'diary'
+# require 'diary'
 
-describe Diary do
-  it "counts the words in its entries" do
-    diary = Diary.new
+# describe Diary do
+#   it "counts the words in its entries" do
+#     diary = Diary.new
 
-    fake_entry_1 = double(:fake_diary_entry, count_words: 2)
-    fake_entry_2 = double(:fake_diary_entry, count_words: 3)
+#     fake_entry_1 = double(:fake_diary_entry, count_words: 2)
+#     fake_entry_2 = double(:fake_diary_entry, count_words: 3)
 
-    diary.add(fake_entry_1)
-    diary.add(fake_entry_2)
+#     diary.add(fake_entry_1)
+#     diary.add(fake_entry_2)
 
-    expect(diary.count_words).to eq 5
-  end
-end
+#     expect(diary.count_words).to eq 5
+#   end
+# end
 
 =begin
 

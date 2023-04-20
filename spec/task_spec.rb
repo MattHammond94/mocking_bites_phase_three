@@ -1,4 +1,3 @@
-
 require "task"
 
 RSpec.describe Task do
