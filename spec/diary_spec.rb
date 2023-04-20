@@ -1,6 +1,21 @@
 require 'diary'
 
 describe Diary do
+  it "counts the words in its entries" do
+    diary = Diary.new
+
+    fake_entry_1 = double(:fake_diary_entry, count_words: 2)
+    fake_entry_2 = double(:fake_diary_entry, count_words: 3)
+
+    diary.add(fake_entry_1)
+    diary.add(fake_entry_2)
+
+    expect(diary.count_words).to eq 5
+  end
+end
+
+=begin
+
   context 'entries method' do
     it 'Should return a list of all entry instances passed' do
       fake_entry = FakeDiaryEntry.new
@@ -35,3 +50,4 @@ class FakeDiaryEntryTwo
   end
 end
 
+=end
