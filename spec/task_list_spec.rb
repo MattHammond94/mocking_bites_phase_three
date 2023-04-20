@@ -1,4 +1,3 @@
-
 require "task_list"
 
 RSpec.describe TaskList do
